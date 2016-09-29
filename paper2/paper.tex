@@ -1,15 +1,9 @@
-\documentclass[letterpaper, twocolumn,11pt]{article}
+\documentclass[letterpaper, twocolumn,10pt]{article}
 \usepackage{epsfig,endnotes,amsmath,usenix}
 
 \title{\textbf{Regressions And Stuff}}
 
-\author{
-\rm{Vahid Fazel-Rezai}\\
-\rm{\texttt{vfazel@mit.edu}}
-\and 
-\rm{Akshay Ravikumar}\\
-\rm{\texttt{akshayr@mit.edu}}
-}
+\author{}
 
 \date{May 6, 2016}
 
@@ -30,7 +24,39 @@ In this paper, we discuss various methods of calculating regression. First, we d
 
 
 \section{Gradient Descent}
+
+\emph{Gradient descent} is an iterative optimization algorithm; in other words, it calculates the parameters $\mathbf{x}$ that minimize a given objective function $f(\mathbf{x})$. The algorithm repeatedly translates an initial \emph{guess} $\mathbf{x}_0$ in a direction proportional to the negative \emph{gradient} $\nabla f(x)$.
+
+In every step of the itreration, we update our guess as following:
+\begin{align*}
+\mathbf{x}_{n+1} = \mathbf{x} - \lambda \nabla f(\mathbf{x}_{n})
+\end{align*}
+where $\lambda$ is the \emph{step size} of the iteration. The algorith terminates upon the following convergence condition: 
+\begin{align*}
+|f(\mathbf{x}_{n+1}) - f(\mathbf{x}_{n})| < \delta
+\end{align*}
+where $\delta$ is the convergence \emph{threshold}. Upon convergence, the algorithm returns a final guess of $\mathbf{x}_{\text{opt}} = \mathbf{x}_{n+1}$.
+
+In this section, we compare two methods of gradient descent: \emph{batch gradient descent}, which computes a gradient over all samples for each iteration, and \emph{stochastic gradient descent}, which uses pointwise gradients instead.
+
+To analyze the perforamnce of the different algorithms, we use the \emph{Gaussian function}:
+\begin{align*}
+f(x) = - \dfrac{1}{\sqrt{(2\pi)^n |\sigma|}} \exp \left[-\dfrac{1}{2} (x - u)^T \sigma^{-1} (x-u)\right]
+\end{align*}
+In addition, we use the \emph{quadratic bowl function}:
+\begin{align*}
+f(x) = \dfrac{1}{2} x^T A x - x^T b 
+\end{align*}
+Finally, we use the \emph{least squares error} function:
+\begin{align*}
+J(\theta) = |X\theta - y|^2
+\end{align*}
+
+We analyze the affects of step size ($\lambda$), threshold ($\delta$), and initial guess $\mathbf{x}_{0}$ on the performance and accuracy of the gradient descent algorithm.
+
 \subsection{Batch Gradient Descent}
+
+
 \subsection{Stochastic Gradient Descent}
 \subsection{Effect of Finite Gradient}
 
