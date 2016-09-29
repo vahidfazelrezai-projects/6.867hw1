@@ -3,11 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pylab as pl
 
-def plot_points(X, Y):
-    plt.plot(X, Y, 'o')
-    plt.xlabel('x')
-    plt.ylabel('y')
-
+# computes the ordinary least squares (OLS) weights
 def regress(X, Y, M):
     mat = []
     for x in X:
@@ -16,17 +12,32 @@ def regress(X, Y, M):
             row.append(x ** i)
         mat.append(row)
     Z = np.array(mat)
-    # w = (X' X)^-1 X' y
     return np.dot(np.dot(np.linalg.inv(np.dot(np.transpose(Z), Z)), np.transpose(Z)), Y);
 
-def curve_plot(fn, lower_x, upper_x, width=2):
+# plots given points
+def plot_points(X, Y):
+    plt.plot(X, Y, 'o')
+
+# plots given function in given range
+def plot_curve(fn, lower_x, upper_x, width=2):
     x = [i/100.0 for i in range(100 * int(math.floor(lower_x)), 100 * int(math.ceil(upper_x)))]
     y = []
     for t in x:
         y.append(fn(t))
     plt.plot(x, y, lw=width)
 
-def run(M):
+# returns function that evaluates as a polynomial with given weights
+def poly_fn(weights):
+    def poly(x):
+        return sum([weights[i] * (x ** i) for i in range(len(weights))])
+    return poly
+
+# function used to generate the data points (before noise)
+def generator(x):
+    return math.cos(math.pi * x) + math.cos(2 * math.pi * x)
+
+# makes plot appropriate for problem 2.1
+def make_plot(M):
     # load data
     data = pl.loadtxt('P2/curvefittingp2.txt')
     X = np.array(data[0,:])
@@ -37,14 +48,12 @@ def run(M):
 
     # compute and plot polynomial
     weights = regress(X, Y, M)
-    def poly(x):
-        return sum([weights[i] * (x ** i) for i in range(len(weights))])
-    curve_plot(poly, min(X), max(X), 3)
+    plot_curve(poly_fn(weights), min(X), max(X), 3)
 
-    def generator(x):
-        return math.cos(math.pi * x) + math.cos(2 * math.pi * x)
-    curve_plot(generator, min(X), max(X), 1)
+    # plot generator curve
+    plot_curve(generator, min(X), max(X), 1)
 
+    # touch up and display plot
     plt.xlabel('x')
     plt.xlabel('y')
     plt.title('Linear Regression (M=' + str(M) + ')' )
