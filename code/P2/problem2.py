@@ -108,7 +108,21 @@ def compare(fn, M, step, threshold):
 # M = 3
 # compare(poly_fn(M), M, .001, .000001)
 
-##### 2.4
-M = 7
+#### 2.4
+M = 4
 plt.title('Linear Regression (n=' + str(M+1) + ')' )
 compare(cos_fn(M), M, .001, .000001)
+
+
+def ridge(fn, lam):
+    Z = np.array([fn(x) for x in X])
+    return np.dot(np.dot(np.linalg.inv(np.add(np.dot(np.transpose(Z), Z), lam * np.identity(Z.shape[1]))), np.transpose(Z)), Y)
+
+def simple_ridge(M, lam):
+	fn = poly_fn(M)
+	weights = ridge(fn, lam)
+	obj = sse_objective(fn)
+	return obj(weights)
+
+
+# print simple_ridge(3, 0.1)
