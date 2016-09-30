@@ -50,18 +50,18 @@ def add_poly_plot(M):
     def curve(x):
         return np.dot(weights, fn(x))
     plot_curve(curve, min(X), max(X), 3)
-    plt.title('Linear Regression (M=' + str(M) + ')' )
+    plt.title('Linear Regression (n=' + str(M) + ')' )
 
-def add_fn_plot(weights, fn):
+def add_fn_plot(weights, fn, width=2):
     def curve(x):
         return np.dot(weights, fn(x))
-    plot_curve(curve, min(X), max(X), 3)
+    plot_curve(curve, min(X), max(X), width)
 
 def make_plot():
     plt.plot(X, Y, 'o')
     plot_curve(generator, min(X), max(X), 1)
     plt.xlabel('x')
-    plt.xlabel('y')
+    plt.ylabel('y')
     plt.show()
 
 def sse_objective(fn):
@@ -84,23 +84,22 @@ def compare(fn, M, step, threshold):
 
     weights1 = regress(fn)
     weights2 = gradient_descent(sse_objective(fn), sse_gradient(fn), guess, step, threshold)
-    #weights3 = stochastic_gradient_descent(sse_objective(fn), sse_gradient(fn), guess, step, threshold)
+    # weights3 = stochastic_gradient_descent(sse_objective(fn), sse_gradient(fn), guess, step, threshold)
 
     print weights1
     print weights2
     # print weights3
 
     add_fn_plot(weights1, fn)
-    add_fn_plot(weights2, fn)
+    # add_fn_plot(weights2, fn, 2)
     # add_fn_plot(weights3, fn)
 
     make_plot()
 
 
 ##### 2.1
-# add_poly_plot(5)
+# add_poly_plot(10)
 # make_plot()
-
 
 ##### 2.2
 # see sse_objective and sse_gradient above
@@ -110,5 +109,6 @@ def compare(fn, M, step, threshold):
 # compare(poly_fn(M), M, .001, .000001)
 
 ##### 2.4
-# M = 5
-# compare(cos_fn(M), M, .001, .000001)
+M = 7
+plt.title('Linear Regression (n=' + str(M+1) + ')' )
+compare(cos_fn(M), M, .001, .000001)
