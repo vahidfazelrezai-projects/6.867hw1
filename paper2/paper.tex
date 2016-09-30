@@ -64,14 +64,15 @@ Finally, we observe the affect of the initial case on the rate of convergence. W
   \end{subfigure}
   \begin{subfigure}
     \centering
-      \includegraphics[width=0.3\textwidth]{../images/lsq_error_gradient}
-    % \caption{As $\lambda$ increases and $\delta$ decreases, error decreases.}
-  \end{subfigure}
-  \begin{subfigure}
-    \centering
       \includegraphics[width=0.3\textwidth]{../images/guess_vs_mags_2}
     % \caption{As $\mathbf{x}_0$ approaches $(10, 10)$, the rate of convergence increases.}
   \end{subfigure}
+  \begin{subfigure}
+    \centering
+      \includegraphics[width=0.3\textwidth]{../images/lsq_error_gradient}
+    % \caption{As $\lambda$ increases and $\delta$ decreases, error decreases.}
+  \end{subfigure}
+  \caption{The effects of $\lambda$, $\mathbf{x}_0$, and $\lambda$ on gradient descent.}
 \end{figure}
 
 \subsection{Stochastic Gradient Descent}
@@ -98,9 +99,10 @@ The benefit of stochastic gradient descent is that computations are quicker, and
   \end{subfigure}
   \begin{subfigure}
     \centering
-      \includegraphics[width=0.45\textwidth]{../images/batch_gradient_steps}
+      \includegraphics[width=0.45\textwidth]{../images/batch_gradient_steps_2}
     % \caption{The magnitude of the gradient during batch gradient descent is much smoother.}
   \end{subfigure}
+  \caption{Stochastic gradient descent (left) is much noisier than batch gradient descent (right).}
 \end{figure}
 
 \subsection{Effect of Finite Gradient}
@@ -210,10 +212,21 @@ We can see that increasing the dimension of the function basis improves the trai
 
 \subsection{Polynomials with Gradient Descent}
 
-Use batch gradient descent on the SSE function on some values of M. Describe your experience
-with initial guesses, step sizes and convergence thresholds. Compare with using SGD on the
-same data. Explain your results in terms of the properties of the function being optimized and
-the properties of the algorithms.
+In this section, we compare the performance of batch and stochastic gradient descent on linear regression. See Figure \ref{fig:gd_m} for the performance of the two gradient descent algorithms on a polynomial function. It appears that, even for high values of $M$ (the degree of the polynomial), the results of either gradient descent are very inaccurate -- in fact, they essentially look quadratic. This is because the values of $x^k$ have extremely small values as $k$ increases for $|x| < 1$. Therefore, the gradient has a very small effect for higher degrees, while smaller degrees (i.e. $k = 0, 1, 2$) have a much larger impact. 
+
+To counteract this effect, the learning rate for the stochastic gradient descent needs to be as low as possible for. In this case, we chose $\nu_t = (r + 0.1)^{-0.51}$; with parameters any larger, the result has very little correlation with the actual function. This is likely because a large learning rate would cause smaller-degree terms to have an relatively large weight during the first few iterations, which would overtake the higher-degree terms. Having a smaller, slower-growing learning rate lets the higher-degree terms affect the result for more iterations, and therefore the curve can fit a larger number of points. 
+
+Finally, initial guess and threshold have very little impact on the accuracy of the function; they simply have an affect on performance.
+
+\begin{figure}[ht!]
+  \centering
+  \label{fig:gd_m}
+  \includegraphics[width=0.24\textwidth]{../images/all_m_3}
+  \includegraphics[width=0.24\textwidth]{../images/all_m_5}
+  \includegraphics[width=0.24\textwidth]{../images/all_m_7}
+  \includegraphics[width=0.24\textwidth]{../images/all_m_10}
+  \caption{The results for GD and SGD for $M = 3, 5, 7, 10$ (in that order).}
+\end{figure}
 
 \subsection{Cosines with Closed Form and Gradient Descent}
 
