@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 SEP 2016 00:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 SEP 2016 01:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,23 +291,23 @@ File: ../images/quadratic_steps_vs_mag.png Graphic file (type png)
 
 <use ../images/quadratic_steps_vs_mag.png>
 Package pdftex.def Info: ../images/quadratic_steps_vs_mag.png used on input lin
-e 62.
+e 65.
 (pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
 
-<../images/guess_vs_mags_2.png, id=3, 687.2877pt x 455.301pt>
-File: ../images/guess_vs_mags_2.png Graphic file (type png)
-
-<use ../images/guess_vs_mags_2.png>
-Package pdftex.def Info: ../images/guess_vs_mags_2.png used on input line 67.
-(pdftex.def)             Requested size: 162.60915pt x 107.71826pt.
-
-<../images/lsq_error_gradient.png, id=4, 724.8681pt x 583.2189pt>
+<../images/lsq_error_gradient.png, id=3, 724.8681pt x 583.2189pt>
 File: ../images/lsq_error_gradient.png Graphic file (type png)
 
 <use ../images/lsq_error_gradient.png>
-Package pdftex.def Info: ../images/lsq_error_gradient.png used on input line 72
+Package pdftex.def Info: ../images/lsq_error_gradient.png used on input line 70
 .
 (pdftex.def)             Requested size: 162.60915pt x 130.82703pt.
+
+<../images/guess_vs_mags_2.png, id=4, 687.2877pt x 455.301pt>
+File: ../images/guess_vs_mags_2.png Graphic file (type png)
+
+<use ../images/guess_vs_mags_2.png>
+Package pdftex.def Info: ../images/guess_vs_mags_2.png used on input line 75.
+(pdftex.def)             Requested size: 162.60915pt x 107.71826pt.
  [1
 
 
@@ -317,7 +317,7 @@ File: ../images/stochastic_gradient_steps.png Graphic file (type png)
 
 <use ../images/stochastic_gradient_steps.png>
 Package pdftex.def Info: ../images/stochastic_gradient_steps.png used on input 
-line 97.
+line 100.
 (pdftex.def)             Requested size: 243.90959pt x 125.94322pt.
 
 <../images/batch_gradient_steps_2.png, id=21, 656.2116pt x 329.5512pt>
@@ -325,79 +325,79 @@ File: ../images/batch_gradient_steps_2.png Graphic file (type png)
 
 <use ../images/batch_gradient_steps_2.png>
 Package pdftex.def Info: ../images/batch_gradient_steps_2.png used on input lin
-e 102.
+e 105.
 (pdftex.def)             Requested size: 243.90959pt x 122.49019pt.
- [2 <../images/quadratic_steps_vs_mag.png> <../images/guess_vs_mags_2.png> <../
-images/lsq_error_gradient.png> <../images/stochastic_gradient_steps.png> <../im
+ [2 <../images/quadratic_steps_vs_mag.png> <../images/lsq_error_gradient.png> <
+../images/guess_vs_mags_2.png> <../images/stochastic_gradient_steps.png> <../im
 ages/batch_gradient_steps_2.png>]
-<../images/poly0.png, id=30, 578.16pt x 433.62pt>
+[3] <../images/poly0.png, id=34, 578.16pt x 433.62pt>
 File: ../images/poly0.png Graphic file (type png)
- <use ../images/poly0.png>
-Package pdftex.def Info: ../images/poly0.png used on input line 204.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-<../images/poly1.png, id=31, 578.16pt x 433.62pt>
+<use ../images/poly0.png>
+Package pdftex.def Info: ../images/poly0.png used on input line 208.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+ <../images/poly1.png, id=35, 578.16pt x 433.62pt>
 File: ../images/poly1.png Graphic file (type png)
- <use ../images/poly1.png>
-Package pdftex.def Info: ../images/poly1.png used on input line 205.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-<../images/poly3.png, id=32, 578.16pt x 433.62pt>
+<use ../images/poly1.png>
+Package pdftex.def Info: ../images/poly1.png used on input line 209.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+ <../images/poly3.png, id=36, 578.16pt x 433.62pt>
 File: ../images/poly3.png Graphic file (type png)
- <use ../images/poly3.png>
-Package pdftex.def Info: ../images/poly3.png used on input line 206.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-<../images/poly10.png, id=33, 578.16pt x 433.62pt>
+<use ../images/poly3.png>
+Package pdftex.def Info: ../images/poly3.png used on input line 210.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+ <../images/poly10.png, id=37, 578.16pt x 433.62pt>
 File: ../images/poly10.png Graphic file (type png)
- <use ../images/poly10.png>
-Package pdftex.def Info: ../images/poly10.png used on input line 207.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-[3] <../images/all_m_3.png, id=38, 578.16pt x 433.62pt>
+<use ../images/poly10.png>
+Package pdftex.def Info: ../images/poly10.png used on input line 211.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+ <../images/all_m_3.png, id=38, 578.16pt x 433.62pt>
 File: ../images/all_m_3.png Graphic file (type png)
 
 <use ../images/all_m_3.png>
-Package pdftex.def Info: ../images/all_m_3.png used on input line 224.
+Package pdftex.def Info: ../images/all_m_3.png used on input line 228.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
 <../images/all_m_5.png, id=39, 578.16pt x 433.62pt>
 File: ../images/all_m_5.png Graphic file (type png)
 
 <use ../images/all_m_5.png>
-Package pdftex.def Info: ../images/all_m_5.png used on input line 225.
+Package pdftex.def Info: ../images/all_m_5.png used on input line 229.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
 <../images/all_m_7.png, id=40, 578.16pt x 433.62pt>
 File: ../images/all_m_7.png Graphic file (type png)
 
 <use ../images/all_m_7.png>
-Package pdftex.def Info: ../images/all_m_7.png used on input line 226.
+Package pdftex.def Info: ../images/all_m_7.png used on input line 230.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
 <../images/all_m_10.png, id=41, 578.16pt x 433.62pt>
 File: ../images/all_m_10.png Graphic file (type png)
 
 <use ../images/all_m_10.png>
-Package pdftex.def Info: ../images/all_m_10.png used on input line 227.
+Package pdftex.def Info: ../images/all_m_10.png used on input line 231.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
  <../images/cos2.png, id=42, 578.16pt x 433.62pt>
 File: ../images/cos2.png Graphic file (type png)
 
 <use ../images/cos2.png>
-Package pdftex.def Info: ../images/cos2.png used on input line 238.
+Package pdftex.def Info: ../images/cos2.png used on input line 242.
 (pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
  <../images/cos5.png, id=43, 578.16pt x 433.62pt>
 File: ../images/cos5.png Graphic file (type png)
 
 <use ../images/cos5.png>
-Package pdftex.def Info: ../images/cos5.png used on input line 239.
+Package pdftex.def Info: ../images/cos5.png used on input line 243.
 (pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
  <../images/cos8.png, id=44, 578.16pt x 433.62pt>
 File: ../images/cos8.png Graphic file (type png)
 
 <use ../images/cos8.png>
-Package pdftex.def Info: ../images/cos8.png used on input line 240.
+Package pdftex.def Info: ../images/cos8.png used on input line 244.
 (pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
  [4 <../images/poly0.png> <../images/poly1.png> <../images/poly3.png> <../image
 s/poly10.png> <../images/all_m_3.png> <../images/all_m_5.png> <../images/all_m_
@@ -406,40 +406,40 @@ s/poly10.png> <../images/all_m_3.png> <../images/all_m_5.png> <../images/all_m_
 File: ../images/ridge3low.png Graphic file (type png)
 
 <use ../images/ridge3low.png>
-Package pdftex.def Info: ../images/ridge3low.png used on input line 271.
+Package pdftex.def Info: ../images/ridge3low.png used on input line 275.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
 <../images/ridge3high.png, id=57, 578.16pt x 433.62pt>
 File: ../images/ridge3high.png Graphic file (type png)
 
 <use ../images/ridge3high.png>
-Package pdftex.def Info: ../images/ridge3high.png used on input line 272.
+Package pdftex.def Info: ../images/ridge3high.png used on input line 276.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
 <../images/ridge10low.png, id=58, 578.16pt x 433.62pt>
 File: ../images/ridge10low.png Graphic file (type png)
 
 <use ../images/ridge10low.png>
-Package pdftex.def Info: ../images/ridge10low.png used on input line 273.
+Package pdftex.def Info: ../images/ridge10low.png used on input line 277.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
 <../images/ridge10high.png, id=59, 578.16pt x 433.62pt>
 File: ../images/ridge10high.png Graphic file (type png)
 
 <use ../images/ridge10high.png>
-Package pdftex.def Info: ../images/ridge10high.png used on input line 274.
+Package pdftex.def Info: ../images/ridge10high.png used on input line 278.
 (pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
  [5 <../images/cos2.png> <../images/cos5.png> <../images/cos8.png> <../images/r
 idge3low.png> <../images/ridge3high.png> <../images/ridge10low.png> <../images/
 ridge10high.png>] [6] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 3083 strings out of 493089
- 43212 string characters out of 6134842
- 118863 words of memory out of 5000000
- 6508 multiletter control sequences out of 15000+600000
+ 3086 strings out of 493089
+ 43243 string characters out of 6134842
+ 119919 words of memory out of 5000000
+ 6511 multiletter control sequences out of 15000+600000
  12023 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,32p,798b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,32p,821b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
@@ -453,7 +453,7 @@ c/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti10.pfb>
-Output written on paper.pdf (6 pages, 945880 bytes).
+Output written on paper.pdf (6 pages, 947856 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream

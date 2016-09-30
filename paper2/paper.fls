@@ -105,12 +105,12 @@ INPUT ../images/quadratic_steps_vs_mag.png
 INPUT ../images/quadratic_steps_vs_mag.png
 OUTPUT paper.pdf
 INPUT ../images/quadratic_steps_vs_mag.png
-INPUT ../images/guess_vs_mags_2.png
-INPUT ../images/guess_vs_mags_2.png
-INPUT ../images/guess_vs_mags_2.png
 INPUT ../images/lsq_error_gradient.png
 INPUT ../images/lsq_error_gradient.png
 INPUT ../images/lsq_error_gradient.png
+INPUT ../images/guess_vs_mags_2.png
+INPUT ../images/guess_vs_mags_2.png
+INPUT ../images/guess_vs_mags_2.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ../images/stochastic_gradient_steps.png

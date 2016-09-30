@@ -4,7 +4,7 @@
 \pagestyle{empty}
 \counterwithin{figure}{section}
 \pagenumbering{gobble}
-\title{Regressions And Stuff}
+\title{6.857 Homework 1: Gradient Descent and Regressions}
 
 
 \begin{document}
@@ -12,13 +12,13 @@
 \maketitle
 \section{Introduction}
 
-In this paper, we discuss various methods of calculating regression. First, we discuss the benfits of using Stochastic Gradient Descent versus Batch Gradient Descent. Next, we analyze the performance of these methods in performing a Least Squares Linear regression. Finally, we discuss blah blah
+In this paper, we discuss various methods of performing regressions. First, we present the stochastic gradient descent and batch gradient descent algorithms, and discuss the benefits and drawbacks of each. Next, we use gradient descent to perform a linear regression on functions with polynomial and sinusoidal bases. We then improve upon this model with ridge regression, which uses an extra weighting term to prevent overfitting. Finally, we present LASSO estimation, which optimizes this model for the case of sparse weights. 
 
 \section{Gradient Descent}
 
-\emph{Gradient descent} is an iterative optimization algorithm; in other words, it calculates the parameters $\mathbf{x}$ that minimize a given objective function $f(\mathbf{x})$. The algorithm repeatedly translates an initial \emph{guess} $\mathbf{x}_0$ in a direction proportional to the negative \emph{gradient} $\nabla f(x)$.
+We start by introducing \emph{gradient descent} iterative optimization algorithm, which calculates the parameters $\mathbf{x}$ that minimize a given objective function $f(\mathbf{x})$. The algorithm repeatedly translates an initial \emph{guess} $\mathbf{x}_0$ in a direction proportional to the negative \emph{gradient} $\nabla f(x)$. By moving in the direction of the negative gradient, the guess tends towards a local minimum.
 
-In every step of the itreration, we update our guess as following:
+In every step of the iteration, we update our guess as follows:
 \begin{align*}
 \mathbf{x}_{n+1} = \mathbf{x} - \lambda \nabla f(\mathbf{x}_{n})
 \end{align*}
@@ -30,32 +30,35 @@ where $\delta$ is the convergence \emph{threshold}. Upon convergence, the algori
 
 In this section, we compare two methods of gradient descent: \emph{batch gradient descent}, which computes a gradient over all samples for each iteration, and \emph{stochastic gradient descent}, which instead uses pointwise gradients.
 
-To analyze the perforamnce of the different algorithms, we use the \emph{Gaussian function}:
+To analyze the perforamnce of the different algorithms, we use the following functions:
+
+\begin{enumerate}
+\item \emph{Gaussian} function:
 \begin{align*}
 f(x) = - \dfrac{1}{\sqrt{(2\pi)^n |\Sigma|}} \exp \left[-\dfrac{1}{2} (x - u)^T \Sigma^{-1} (x-u)\right]
 \end{align*}
-In addition, we use the \emph{quadratic bowl function}:
+\item \emph{Quadratic bowl} function:
 \begin{align*}
 f(x) = \dfrac{1}{2} x^T A x - x^T b 
 \end{align*}
-Finally, we use the \emph{least squares error} function:
+\item \emph{Least squares error} function:
 \begin{align*}
 J(\theta) = |X\theta - y|^2
 \end{align*}
-
+\end{enumerate}
 
 \subsection{Batch Gradient Descent}
 
-In batch gradient descent, for every iteration we calculate the gradient across the entire sample set. In this section, we analyze the affects of step size ($\lambda$), threshold ($\delta$), and initial guess $\mathbf{x}_{0}$ on the performance and accuracy of the gradient descent algorithm. 
+In batch gradient descent, we calculate the gradient across the entire sample set for each iteration. In this section, we analyze the affects of step size ($\lambda$), threshold ($\delta$), and initial guess $\mathbf{x}_{0}$ on the performance and accuracy of batch gradient descent. 
 
-First, we note that step size has a significant impact on the convergence rate of the algorithm. We run gradient descent on an arbitrary quadratic bowl function. As we increase the value of $\lambda$ from $0.0001$ to $0.001$, the magnitude of the gradient decreases more quickly, and the algorithm converges faster. Note that in this figure, all of the gradient descents were run with a fixed size of 2000 iterations to illustrate the effects on the gradient over time.
+First, we note that step size has a significant impact on the convergence rate of the algorithm. To test this, we run gradient descent on an arbitrary quadratic bowl function. As we increase the value of $\lambda$ from $0.0001$ to $0.001$, the magnitude of the gradient decreases more quickly, and the algorithm converges faster (see Figure \ref{fig:gd}, left). Note that in the figure, all of the gradient descents were run with a fixed size of 2000 iterations.
 
+In addition, the step size and threshold control the accuracy of the gradient descent. As step size increases, we expect a more accurate result because the gradient descent will likely converge well within the threshold, while a smaller step size might lead to convergence at the boundary of the threshold. In addition, as the threshold decreases, we expect a more accurate result because the algorithm needs to run for longer before reaching a stable equilibrium. To verify this, we run gradient descent using a two-dimensional Gaussian with mean $(10, 10)$. As we vary $\lambda$ and $\delta$, we plot the least-squares error between the returned value and the actual optimum of $(10, 10)$ (see Figure \ref{fig:gd}, middle). Indeed, the error decreases as $\lambda$ increases and $\delta$ decreases.
 
-In addition, the step size and threshold control the accuracy of the gradient descent. As step size decreases, we expect a less accurate result because the gradient descent will likely converge at the boundary of the threshold, which a larger step size might lead to convergence well past the threshold. In addition, as the threshold decreases, we expect a more accurate result because the algorithm needs to run for longer before reaching a stable equilibrium. To verify these claims, we run gradient descent using a two-dimensional Gaussian with mean $(10, 10)$. As we vary $\lambda$ and $\delta$, we plot the least-squares error between the returned value and the actual optimum of $(10, 10)$ (see Figure 2). Indeed, the error decreases as $\lambda$ increases and $\delta$ decreases.
-
-Finally, we observe the affect of the initial case on the rate of convergence. When running gradient descent on a two-dimensional Gaussian with mean $(10, 10)$, one would expect that as the intial guess appraoches the optimal value, the convergence rate increases. Indeed, running the algorithm with $\lambda = 1000$ and $\delta = 10^{-11}$, we notice that the rate of convergence is much higher as the initial guess approaches the actual value (see Figure 3). 
+Finally, we observe the affect of the initial guess on the rate of convergence. When running gradient descent on a two-dimensional Gaussian with mean $(10, 10)$, one would expect that as the intial guess approaches the optimal value, the convergence rate increases. Running the algorithm with $\lambda = 1000$ and $\delta = 10^{-11}$, we notice that the rate of convergence is much higher as the initial guess approaches the optimal value (see Figure \ref{fig:gd}, right).
 
 \begin{figure}[ht!]
+  \label{fig:gd}
   \centering
   \begin{subfigure}
     \centering
@@ -64,21 +67,20 @@ Finally, we observe the affect of the initial case on the rate of convergence. W
   \end{subfigure}
   \begin{subfigure}
     \centering
-      \includegraphics[width=0.3\textwidth]{../images/guess_vs_mags_2}
-    % \caption{As $\mathbf{x}_0$ approaches $(10, 10)$, the rate of convergence increases.}
-  \end{subfigure}
-  \begin{subfigure}
-    \centering
       \includegraphics[width=0.3\textwidth]{../images/lsq_error_gradient}
     % \caption{As $\lambda$ increases and $\delta$ decreases, error decreases.}
   \end{subfigure}
-  \caption{The effects of $\lambda$, $\mathbf{x}_0$, and $\lambda$ on gradient descent.}
+   \begin{subfigure}
+    \centering
+      \includegraphics[width=0.3\textwidth]{../images/guess_vs_mags_2}
+    % \caption{As $\mathbf{x}_0$ approaches $(10, 10)$, the rate of convergence increases.}
+  \end{subfigure}
+  \caption{The effects of $\lambda$ (left), $\mathbf{x}_0$ (middle), and $\delta$ (right) on gradient descent.}
 \end{figure}
 
 \subsection{Stochastic Gradient Descent}
 
-Sometimes, it might be inefficient to compute a gradient over the entire dataset for every iteration, especially when the dataset is large. One way to address this is to use stochastic gradient descent, which uses a pointwise gradient instead. In this experiment, we use least-squares regression, which has a pointwise gradient of 
-
+With large datasets, it might be inefficient to compute a gradient over the entire dataset for each iteration. One way to address this is to use stochastic gradient descent, which uses a pointwise gradient instead. In this experiment, we use least-squares regression, which has a pointwise gradient of 
 \begin{align*}
 J(\theta; x^{(i)}, y^{(i)}) = (x^{(i)}\theta_t - y^{(i)})^2
 \end{align*}
@@ -88,10 +90,11 @@ On each iteration, we update our value as follows:
 \end{align*}
 where $\nabla = (\tau_0 + t)^{-\kappa}$ is the \emph{learning rate}, and $\tau_0$ and $\kappa$ are constants.
 
-The benefit of stochastic gradient descent is that computations are quicker, and thus the algorithm converges faster, with respect to both time and the number of iterations. However, this comes with a decrease in performance, because each iteration uses less information. Refer to Figure 4 for the difference in the magnitude in the gradient between the two methods: note that stochastic gradient descent is much noisier, and in the end, does not converge to as accurate of a value as batch gradient descent does.
+The benefit of stochastic gradient descent is that computations are quicker, which means the algorithm converges in fewer iterations. However, because each iteration utilizes less information, this comes with a decrease in performance. Refer to Figure \ref{fig:gd_steps} for the difference in convergence rate between the two methods: note that stochastic gradient descent is much noisier, and in the end, does not converge to as accurate of a value as does batch gradient descent.
 
 \begin{figure}[ht!]
   \center
+  \label{fig:gd_steps}
   \begin{subfigure}
     \centering
       \includegraphics[width=0.45\textwidth]{../images/stochastic_gradient_steps}
@@ -102,19 +105,20 @@ The benefit of stochastic gradient descent is that computations are quicker, and
       \includegraphics[width=0.45\textwidth]{../images/batch_gradient_steps_2}
     % \caption{The magnitude of the gradient during batch gradient descent is much smoother.}
   \end{subfigure}
-  \caption{Stochastic gradient descent (left) is much noisier than batch gradient descent (right).}
+  \caption{Magnitude of the gradient vs. number of iterations. Stochastic gradient descent (left) is much noisier than batch gradient descent (right).}
 \end{figure}
 
 \subsection{Effect of Finite Gradient}
 
-When the objective function doesn't have a closed form solution, one can approximate the gradient using a central finite difference. In other words, we have 
+When the objective function doesn't have a closed form solution, one can approximate the gradient using a \emph{central finite difference}. In other words, we have 
 \begin{align*}
 \nabla f(x) \approx \nabla_h[f](x) = \dfrac{f(x+h/2) - f(x-h/2)}{h}
 \end{align*}
-Therefore, we only need the objective function to approximate the gradient. Note that as $h$ approaches zero, this approaches the actual value of the gradient; and has $h$ approaches infinity this value diverges. Figures 4 and 5 illustrate the impact of $h$ on the accuracy of the gradient: even for relatively large $h$ (especially for the quadratic bowl), the approximation is accurate to several orders of magnitude.
+Therefore, we only need the objective function to approximate the gradient. Note that as $h$ approaches zero, this approaches the actual value of the gradient; and as $h$ increaes, the value diverges. Figure \ref{fig:cfd}illustrates the impact of $h$ on the accuracy of the gradient: even for large $h$ (especially for the quadratic bowl), the approximation is accurate to several orders of magnitude.
 
 \begin{figure}[ht!]
   \centering
+  \label{fig:cfd}
   \begin{subfigure}
     \centering
       \begin{tabular}{c | c}
@@ -142,8 +146,8 @@ Therefore, we only need the objective function to approximate the gradient. Note
       \end{tabular}
     % \caption{As $h$ increases, the accuracy of the central finite difference for this quadratic bowl decreases very slowly. The actual gradient value is $-280$.}
   \end{subfigure}
+  \caption{The change in central finite difference as the value of $h$ increases for Gaussian (left) and quadratic bowl (right). The real values are $-3.1704 \cdot 10^{-7}$ and $-280$, respectively.}
 \end{figure}
-
 
 
 \section{Function Basis}
@@ -163,9 +167,9 @@ so that
 f(x) &= \bm{c} \cdot \bm{\phi}(x). \label{eq:predictor}
 \end{align}
 
-The choice of the basis functions is somewhat arbitrary and often depends on the problem domain. Common choices are monomials ($\phi_i(x) = x^i$) and sinusoidals ($\phi_i(x) = \sin(i \pi x)$).
+The choice of the basis functions is somewhat arbitrary and often depend on the problem domain. Common choices are monomials ($\phi_i(x) = x^i$) and sinusoidals ($\phi_i(x) = \sin(i \pi x)$).
 
-As for the algorithm to pick the coefficient vector $\bm{c}$, we discuss three methods: \emph{linear regression}, \emph{ridge regression}, and \emph{LASSO} (least absolute shrinkage and selection operator). We devote one section to exploring each method in the next three sections.
+As for the algorithm to pick the coefficient vector $\bm{c}$, we discuss three methods: \emph{linear regression}, \emph{ridge regression}, and \emph{LASSO} (least absolute shrinkage and selection operator). We explore each method over the next three sections.
 
 Before moving on, we develop common notation to set up the algorithmic problem. Suppose we are given the training data as column vectors $\bm{x}$ and $\bm{y}$ of length $m$ and have chosen $n$ basis functions given by $\bm{\phi}$. We let $X = \bm{\phi}(\bm{x})$ be the $m$ by $n$ matrix where the $i$-th row is $\bm{\phi}(x_i)$ and $x_i$ is the $i$-th element of $\bm{x}$. Thus, we can roughly frame our algorithm's goal as finding a column vector $\bm{c}$ of size $n$ such that
 \begin{align}
@@ -214,9 +218,9 @@ We can see that increasing the dimension of the function basis improves the trai
 
 In this section, we compare the performance of batch and stochastic gradient descent on linear regression. See Figure \ref{fig:gd_m} for the performance of the two gradient descent algorithms on a polynomial function. It appears that, even for high values of $M$ (the degree of the polynomial), the results of either gradient descent are very inaccurate -- in fact, they essentially look quadratic. This is because the values of $x^k$ have extremely small values as $k$ increases for $|x| < 1$. Therefore, the gradient has a very small effect for higher degrees, while smaller degrees (i.e. $k = 0, 1, 2$) have a much larger impact. 
 
-To counteract this effect, the learning rate for the stochastic gradient descent needs to be as low as possible for. In this case, we chose $\nu_t = (r + 0.1)^{-0.51}$; with parameters any larger, the result has very little correlation with the actual function. This is likely because a large learning rate would cause smaller-degree terms to have an relatively large weight during the first few iterations, which would overtake the higher-degree terms. Having a smaller, slower-growing learning rate lets the higher-degree terms affect the result for more iterations, and therefore the curve can fit a larger number of points. 
+To counteract this effect, the learning rate for the stochastic gradient descent needs to be as low as possible for. In this case, we chose $\nu_t = (r + 0.1)^{-0.51}$; with parameters any larger, the result has very little correlation with the actual function. This is likely because a large learning rate would cause smaller-degree terms to have an relatively large weight during the first few iterations, which would overtake the higher-degree terms. Having a smaller, slower-growing learning rate lets the higher-degree terms affect the result for more iterations, and therefore the result more closely fits the input data.
 
-Finally, initial guess and threshold have very little impact on the accuracy of the function; they simply have an affect on performance.
+Finally, initial guess and threshold have very little impact on the accuracy of the gradient descent; they simply have an affect on performance.
 
 \begin{figure}[ht!]
   \centering
