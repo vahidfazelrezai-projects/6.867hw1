@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  29 SEP 2016 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  29 SEP 2016 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -94,10 +94,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/preprint/fullpage.sty
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip48
-)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -133,35 +129,82 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen114
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen115
+\subfiglabelskip=\skip51
+\c@subfigure=\count102
+\c@lofdepth=\count103
+\c@subtable=\count104
+\c@lotdepth=\count105
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
+\Gm@bindingoffset=\dimen116
+\Gm@wd@mp=\dimen117
+\Gm@odd@mp=\dimen118
+\Gm@even@mp=\dimen119
+\Gm@layoutwidth=\dimen120
+\Gm@layoutheight=\dimen121
+\Gm@layouthoffset=\dimen122
+\Gm@layoutvoffset=\dimen123
+\Gm@dimlist=\toks20
+)
 (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen114
+\scratchcounter=\count109
+\scratchdimen=\dimen124
 \scratchbox=\box28
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen115
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks21
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen125
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -169,10 +212,6 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -210,76 +249,185 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=542.02501pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 
 LaTeX Warning: No \author given.
 
-[1
+<../images/quadratic_steps_vs_mag.png, id=1, 578.16pt x 433.62pt>
+File: ../images/quadratic_steps_vs_mag.png Graphic file (type png)
+
+<use ../images/quadratic_steps_vs_mag.png>
+Package pdftex.def Info: ../images/quadratic_steps_vs_mag.png used on input lin
+e 62.
+(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
+
+<../images/lsq_error_gradient.png, id=3, 724.8681pt x 583.2189pt>
+File: ../images/lsq_error_gradient.png Graphic file (type png)
+
+<use ../images/lsq_error_gradient.png>
+Package pdftex.def Info: ../images/lsq_error_gradient.png used on input line 67
+.
+(pdftex.def)             Requested size: 162.60915pt x 130.82703pt.
+
+<../images/guess_vs_mags_2.png, id=4, 687.2877pt x 455.301pt>
+File: ../images/guess_vs_mags_2.png Graphic file (type png)
+
+<use ../images/guess_vs_mags_2.png>
+Package pdftex.def Info: ../images/guess_vs_mags_2.png used on input line 72.
+(pdftex.def)             Requested size: 162.60915pt x 107.71826pt.
+ [1
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<../images/poly0.png, id=15, 578.16pt x 433.62pt>
+<../images/stochastic_gradient_steps.png, id=20, 1166.3575pt x 602.25pt>
+File: ../images/stochastic_gradient_steps.png Graphic file (type png)
+
+<use ../images/stochastic_gradient_steps.png>
+Package pdftex.def Info: ../images/stochastic_gradient_steps.png used on input 
+line 96.
+(pdftex.def)             Requested size: 243.90959pt x 125.94322pt.
+
+<../images/batch_gradient_steps.png, id=21, 803.0pt x 602.25pt>
+File: ../images/batch_gradient_steps.png Graphic file (type png)
+
+<use ../images/batch_gradient_steps.png>
+Package pdftex.def Info: ../images/batch_gradient_steps.png used on input line 
+101.
+(pdftex.def)             Requested size: 243.90959pt x 182.92784pt.
+ [2 <../images/quadratic_steps_vs_mag.png> <../images/lsq_error_gradient.png> <
+../images/guess_vs_mags_2.png> <../images/stochastic_gradient_steps.png> <../im
+ages/batch_gradient_steps.png>]
+<../images/poly0.png, id=28, 578.16pt x 433.62pt>
 File: ../images/poly0.png Graphic file (type png)
  <use ../images/poly0.png>
-Package pdftex.def Info: ../images/poly0.png used on input line 68.
-(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
+Package pdftex.def Info: ../images/poly0.png used on input line 202.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-<../images/poly1.png, id=17, 578.16pt x 433.62pt>
+<../images/poly1.png, id=29, 578.16pt x 433.62pt>
 File: ../images/poly1.png Graphic file (type png)
  <use ../images/poly1.png>
-Package pdftex.def Info: ../images/poly1.png used on input line 69.
-(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
+Package pdftex.def Info: ../images/poly1.png used on input line 203.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-<../images/poly3.png, id=18, 578.16pt x 433.62pt>
+<../images/poly3.png, id=30, 578.16pt x 433.62pt>
 File: ../images/poly3.png Graphic file (type png)
  <use ../images/poly3.png>
-Package pdftex.def Info: ../images/poly3.png used on input line 70.
-(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
+Package pdftex.def Info: ../images/poly3.png used on input line 204.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-<../images/poly10.png, id=19, 578.16pt x 433.62pt>
+<../images/poly10.png, id=31, 578.16pt x 433.62pt>
 File: ../images/poly10.png Graphic file (type png)
  <use ../images/poly10.png>
-Package pdftex.def Info: ../images/poly10.png used on input line 71.
-(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
+Package pdftex.def Info: ../images/poly10.png used on input line 205.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
 
-[2 <../images/poly0.png> <../images/poly1.png> <../images/poly3.png> <../images
-/poly10.png>] <../images/cos2.png, id=29, 578.16pt x 433.62pt>
+[3] <../images/cos2.png, id=36, 578.16pt x 433.62pt>
 File: ../images/cos2.png Graphic file (type png)
+ <use ../images/cos2.png>
+Package pdftex.def Info: ../images/cos2.png used on input line 225.
+(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
 
-<use ../images/cos2.png>
-Package pdftex.def Info: ../images/cos2.png used on input line 91.
-(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
- <../images/cos8.png, id=30, 578.16pt x 433.62pt>
+<../images/cos5.png, id=37, 578.16pt x 433.62pt>
+File: ../images/cos5.png Graphic file (type png)
+ <use ../images/cos5.png>
+Package pdftex.def Info: ../images/cos5.png used on input line 226.
+(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
+
+<../images/cos8.png, id=38, 578.16pt x 433.62pt>
 File: ../images/cos8.png Graphic file (type png)
+ <use ../images/cos8.png>
+Package pdftex.def Info: ../images/cos8.png used on input line 227.
+(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
 
-<use ../images/cos8.png>
-Package pdftex.def Info: ../images/cos8.png used on input line 92.
-(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
- [3 <../images/cos2.png> <../images/cos8.png>] [4]
-(./paper.aux) ) 
+[4 <../images/poly0.png> <../images/poly1.png> <../images/poly3.png> <../images
+/poly10.png> <../images/cos2.png> <../images/cos5.png> <../images/cos8.png>]
+<../images/ridge3low.png, id=50, 578.16pt x 433.62pt>
+File: ../images/ridge3low.png Graphic file (type png)
+
+<use ../images/ridge3low.png>
+Package pdftex.def Info: ../images/ridge3low.png used on input line 258.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+
+<../images/ridge3high.png, id=51, 578.16pt x 433.62pt>
+File: ../images/ridge3high.png Graphic file (type png)
+
+<use ../images/ridge3high.png>
+Package pdftex.def Info: ../images/ridge3high.png used on input line 259.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+
+<../images/ridge10low.png, id=52, 578.16pt x 433.62pt>
+File: ../images/ridge10low.png Graphic file (type png)
+
+<use ../images/ridge10low.png>
+Package pdftex.def Info: ../images/ridge10low.png used on input line 260.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+
+<../images/ridge10high.png, id=53, 578.16pt x 433.62pt>
+File: ../images/ridge10high.png Graphic file (type png)
+
+<use ../images/ridge10high.png>
+Package pdftex.def Info: ../images/ridge10high.png used on input line 261.
+(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+ [5 <../images/ridge3low.png> <../images/ridge3high.png> <../images/ridge10low.
+png> <../images/ridge10high.png>] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2394 strings out of 493117
- 32249 string characters out of 6135433
- 98094 words of memory out of 5000000
- 5823 multiletter control sequences out of 15000+600000
+ 3064 strings out of 493117
+ 42735 string characters out of 6135433
+ 118583 words of memory out of 5000000
+ 6471 multiletter control sequences out of 15000+600000
  12023 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,14n,23p,515b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmib10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx1
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b>
-Output written on paper.pdf (4 pages, 282322 bytes).
+ 38i,14n,32p,798b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb>
+Output written on paper.pdf (5 pages, 764684 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
