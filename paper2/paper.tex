@@ -1,18 +1,20 @@
 \documentclass[10pt]{paper}
-\usepackage{bm,amsmath,graphicx,chngcntr,subfigure}
-\usepackage[margin=0.5in]{geometry}
+\usepackage{bm,amsmath,graphicx,chngcntr,subfigure,float}
+\usepackage[margin=0.43in]{geometry}
 \pagestyle{empty}
 \counterwithin{figure}{section}
 \pagenumbering{gobble}
-\title{6.857 Homework 1: Gradient Descent and Regressions}
+\title{6.867 Homework 1: Gradient Descent and Regression Methods}
 
 
 \begin{document}
 
 \maketitle
+\vspace{-50px}
+
 \section{Introduction}
 
-In this paper, we discuss various methods of performing regressions. First, we present the stochastic gradient descent and batch gradient descent algorithms, and discuss the benefits and drawbacks of each. Next, we use gradient descent to perform a linear regression on functions with polynomial and sinusoidal bases. We then improve upon this model with ridge regression, which uses an extra weighting term to prevent overfitting. Finally, we present LASSO estimation, which optimizes this model for the case of sparse weights. 
+In this paper, we discuss various methods of performing regressions. First, we present the stochastic gradient descent and batch gradient descent algorithms, and discuss the benefits and drawbacks of each. Next, we use gradient descent to perform linear regressions. We then improve upon this model with ridge regression, which uses an extra regularization term to prevent overfitting. Finally, we present LASSO estimation, which optimizes this model to encourage sparse coefficient vectors. 
 
 \section{Gradient Descent}
 
@@ -86,7 +88,7 @@ J(\theta; x^{(i)}, y^{(i)}) = (x^{(i)}\theta_t - y^{(i)})^2
 \end{align*}
 On each iteration, we update our value as follows:
 \begin{align*}
-\theta_{t+1} = \theta_{t} - \nu_t \nabla_\theta J(\theta_t; x^{(i)}, y^{(i)})
+\theta_{t+1} = \theta_{t} - \eta_t \nabla_\theta J(\theta_t; x^{(i)}, y^{(i)})
 \end{align*}
 where $\nabla = (\tau_0 + t)^{-\kappa}$ is the \emph{learning rate}, and $\tau_0$ and $\kappa$ are constants.
 
@@ -114,7 +116,7 @@ When the objective function doesn't have a closed form solution, one can approxi
 \begin{align*}
 \nabla f(x) \approx \nabla_h[f](x) = \dfrac{f(x+h/2) - f(x-h/2)}{h}
 \end{align*}
-Therefore, we only need the objective function to approximate the gradient. Note that as $h$ approaches zero, this approaches the actual value of the gradient; and as $h$ increaes, the value diverges. Figure \ref{fig:cfd}illustrates the impact of $h$ on the accuracy of the gradient: even for large $h$ (especially for the quadratic bowl), the approximation is accurate to several orders of magnitude.
+Therefore, we only need the objective function to approximate the gradient. Note that as $h$ approaches zero, this approaches the actual value of the gradient; and as $h$ increaes, the value diverges. Figure \ref{fig:cfd} illustrates the impact of $h$ on the accuracy of the gradient: even for large $h$ (especially for the quadratic bowl), the approximation is accurate to several orders of magnitude.
 
 \begin{figure}[ht!]
   \centering
@@ -154,7 +156,7 @@ Therefore, we only need the objective function to approximate the gradient. Note
 Consider a basic prediction problem where given an input, $x$, we wish to predict a value $y$ (e.g. predict income given GPA, or predict crime rate given temperature). We train on a sample of labeled data (a set of $(x,y)$ pairs) to find a function $f(x)$ that will give the expected $y$ for new inputs $x$.
 
 One approach to this problem is to model $f$ as the linear combination of \emph{basis functions}. In other words, we manually choose functions $\phi_1(x), \dots, \phi_n(x)$ and algorithmically pick coefficients $c_1, \dots, c_n$, which we put together as
-\begin{align*}bm
+\begin{align*}
 f(x) &= c_1 \phi_1(x) + \dots + c_n \phi_n(x).
 \end{align*}
 We can rewrite this with 
@@ -218,7 +220,7 @@ We can see that increasing the dimension of the function basis improves the trai
 
 In this section, we compare the performance of batch and stochastic gradient descent on linear regression. See Figure \ref{fig:gd_m} for the performance of the two gradient descent algorithms on a polynomial function. It appears that, even for high values of $M$ (the degree of the polynomial), the results of either gradient descent are very inaccurate -- in fact, they essentially look quadratic. This is because the values of $x^k$ have extremely small values as $k$ increases for $|x| < 1$. Therefore, the gradient has a very small effect for higher degrees, while smaller degrees (i.e. $k = 0, 1, 2$) have a much larger impact. 
 
-To counteract this effect, the learning rate for the stochastic gradient descent needs to be as low as possible for. In this case, we chose $\nu_t = (r + 0.1)^{-0.51}$; with parameters any larger, the result has very little correlation with the actual function. This is likely because a large learning rate would cause smaller-degree terms to have an relatively large weight during the first few iterations, which would overtake the higher-degree terms. Having a smaller, slower-growing learning rate lets the higher-degree terms affect the result for more iterations, and therefore the result more closely fits the input data.
+To counteract this effect, the learning rate for the stochastic gradient descent needs to be as low as possible for. In this case, we chose $\eta_t = (r + 0.1)^{-0.51}$; with parameters any larger, the result has very little correlation with the actual function. This is likely because a large learning rate would cause smaller-degree terms to have an relatively large weight during the first few iterations, which would overtake the higher-degree terms. Having a smaller, slower-growing learning rate lets the higher-degree terms affect the result for more iterations, and therefore the result more closely fits the input data.
 
 Finally, initial guess and threshold have very little impact on the accuracy of the gradient descent; they simply have an affect on performance.
 
@@ -298,9 +300,6 @@ To illustrate in an example, we have three sets of data: set A, set B, and a val
   2 & 2.35 & \textbf{2.35} & 2.35 & 2.36 & 2.43 \\
   3 & 2.37 & 2.37 & 2.37 & 2.39 & 2.55 \\
   4 & 3.58 & 3.58 & 3.58 & 3.59 & 3.67 \\
-  5 & 4.14 & 4.14 & 4.14 & 4.12 & 3.97 \\
-  6 & 3.98 & 3.98 & 3.98 & 3.96 & 3.89 \\
-  7 & 4.07 & 4.07 & 4.06 & 4.03 & 3.89 \\
   \end{tabular}
   \qquad
   \begin{tabular}{c|ccccc}
@@ -310,9 +309,6 @@ To illustrate in an example, we have three sets of data: set A, set B, and a val
   2 & 38.53 & 38.65 & 38.76 & 38.87 & 38.96 \\
   3 & 30.30 & 28.46 & \textbf{28.09} & 28.47 & 29.21 \\
   4 & 130.20 & 67.54 & 51.63 & 46.17 & 44.35 \\
-  5 & 625.43 & 368.40 & 287.26 & 242.74 & 212.14 \\
-  6 & 680.05 & 533.60 & 481.26 & 440.20 & 406.68 \\
-  7 & 492.85 & 360.39 & 448.42 & 544.91 & 634.85 \\
   \end{tabular}
   \caption{SSE values on validation set after training with various $n$ (rows) and $\lambda$ (columns). Left: training on set A. Right: training on set B. Best values bolded.}
 \end{figure}
@@ -323,7 +319,30 @@ We can see in this example that the choice of training set matters. Also, we not
 
 \section{LASSO}
 
+LASSO extends linear regression as well, but in a slightly different way. The balance between minimizing error and minimizing coefficient size is achieved by finding the optimal $\bm{c}$ for the objective function
+\begin{align}
+|\bm{y} - X \bm{c}|^2 + \lambda \sum_{i=1}^{n} |c_i|.
+\end{align}
+In other words, we use the sum of the first order magnitudes of the coefficients rather than second order.
 
+This gives a similar benefit as ridge regression in that it can be tuned to generalize, avoiding overfitting and underfitting. However, it additionally has a subtle but important advantage: LASSO encourages coefficients to be exactly zero, resulting in sparse coefficient vectors. This can be useful when the basis dimension is large by simplifying and speeding up computations (as all zero coefficients can be ignored) and also allows for the strategy of throwing all possible basis functions at the regression and letting LASSO find which functions to use.
+
+To intuitively see why LASSO encourages exactly zero coefficients, roughly consider applying gradient descent. If at a certain point the gradient in one variable is larger than that of another, it would make the objective function (specifically sum of absolute values) smaller to transfer the combined sum of the two variables all to only one of the variables, making the other one zero.
+
+\subsection{Sparsity in LASSO versus Ridge Regression}
+
+We illustrate the sparsity property of LASSO in an example where all the data points were generated using a sparse set of coefficients on a given set of basis functions plus some noise. The data points are divided into training, validation, and test sets. We train prediction curves with the same basis functions using linear regression (when $\lambda = 0$), ridge regression (parameters chosen using validation), and LASSO (parameters chosen using validation). 
+
+Inspecting the coefficient vectors numerically, we find that linear and ridge regression have all nonzero coefficients, but LASSO gives nonzero coefficients exactly for the same functions as the true generating coefficients. Indeed, in this case LASSO correctly identified the correct basis functions. This is the ``selection operator'' that makes up the last two letters of LASSO.
+
+If we plot all the data points, prediction curves, and generating (true) curve in Figure \ref{fig:everything}, we see that all regressions give a relatively good prediction of the data. All the methods have generally find coefficients that give a close approximation of the training data, and in this case don't overfit. Depending on the application, sparsity may or may not be desired, and the method for solving the prediction problem can be appropriately chosen with consideration of each method's unique properties.
+
+\begin{figure}[H]
+  \centering
+  \label{fig:everything}
+  \includegraphics[width=0.5\textwidth]{../images/everything.png}
+  \caption{Comparison of various prediction curves plotted with data points.}
+\end{figure}
 
 \end{document}
 

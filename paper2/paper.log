@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 SEP 2016 01:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  30 SEP 2016 01:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper.tex
 (./paper.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/paper/paper.cls
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/paper/paper.cls
 Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
 \hours=\count79
 \minutes=\count80
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \beforetitlespace=\skip41
 \c@part=\count81
@@ -27,33 +27,33 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip44
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 207.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 LaTeX Info: Redefining \boldsymbol on input line 39.
 \pmbraise@=\dimen104
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -94,31 +94,31 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count101
@@ -126,10 +126,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip48
 \subfigcapskip=\skip49
@@ -145,27 +145,35 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip52
 \subfig@bottom=\skip53
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count106
-\Gm@cntv=\count107
-\c@Gm@tempcnt=\count108
+\Gm@cnth=\count107
+\Gm@cntv=\count108
+\c@Gm@tempcnt=\count109
 \Gm@bindingoffset=\dimen116
 \Gm@wd@mp=\dimen117
 \Gm@odd@mp=\dimen118
@@ -174,7 +182,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen121
 \Gm@layouthoffset=\dimen122
 \Gm@layoutvoffset=\dimen123
-\Gm@dimlist=\toks20
+\Gm@dimlist=\toks22
 )
 (./paper.aux)
 \openout1 = `paper.aux'.
@@ -192,24 +200,24 @@ LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
+\scratchcounter=\count110
 \scratchdimen=\dimen124
-\scratchbox=\box28
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count112
+\scratchbox=\box30
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count113
 \MPscratchDim=\dimen125
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks22
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -218,22 +226,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -245,7 +253,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -257,15 +265,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
-* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* h-part:(L,W,R)=(31.07556pt, 552.14388pt, 31.07556pt)
+* v-part:(T,H,B)=(31.07556pt, 732.81886pt, 31.07556pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=542.02501pt
-* \textheight=722.7pt
-* \oddsidemargin=-36.135pt
-* \evensidemargin=-36.135pt
-* \topmargin=-73.135pt
+* \textwidth=552.14388pt
+* \textheight=732.81886pt
+* \oddsidemargin=-41.19443pt
+* \evensidemargin=-41.19443pt
+* \topmargin=-78.19443pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -291,172 +299,179 @@ File: ../images/quadratic_steps_vs_mag.png Graphic file (type png)
 
 <use ../images/quadratic_steps_vs_mag.png>
 Package pdftex.def Info: ../images/quadratic_steps_vs_mag.png used on input lin
-e 65.
-(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
+e 67.
+(pdftex.def)             Requested size: 165.64484pt x 124.2314pt.
 
 <../images/lsq_error_gradient.png, id=3, 724.8681pt x 583.2189pt>
 File: ../images/lsq_error_gradient.png Graphic file (type png)
 
 <use ../images/lsq_error_gradient.png>
-Package pdftex.def Info: ../images/lsq_error_gradient.png used on input line 70
+Package pdftex.def Info: ../images/lsq_error_gradient.png used on input line 72
 .
-(pdftex.def)             Requested size: 162.60915pt x 130.82703pt.
+(pdftex.def)             Requested size: 165.64484pt x 133.2743pt.
 
 <../images/guess_vs_mags_2.png, id=4, 687.2877pt x 455.301pt>
 File: ../images/guess_vs_mags_2.png Graphic file (type png)
 
 <use ../images/guess_vs_mags_2.png>
-Package pdftex.def Info: ../images/guess_vs_mags_2.png used on input line 75.
-(pdftex.def)             Requested size: 162.60915pt x 107.71826pt.
+Package pdftex.def Info: ../images/guess_vs_mags_2.png used on input line 77.
+(pdftex.def)             Requested size: 165.64484pt x 109.73299pt.
  [1
 
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 <../images/stochastic_gradient_steps.png, id=20, 1166.3575pt x 602.25pt>
 File: ../images/stochastic_gradient_steps.png Graphic file (type png)
 
 <use ../images/stochastic_gradient_steps.png>
 Package pdftex.def Info: ../images/stochastic_gradient_steps.png used on input 
-line 100.
-(pdftex.def)             Requested size: 243.90959pt x 125.94322pt.
+line 102.
+(pdftex.def)             Requested size: 248.46306pt x 128.28658pt.
 
 <../images/batch_gradient_steps_2.png, id=21, 656.2116pt x 329.5512pt>
 File: ../images/batch_gradient_steps_2.png Graphic file (type png)
 
 <use ../images/batch_gradient_steps_2.png>
 Package pdftex.def Info: ../images/batch_gradient_steps_2.png used on input lin
-e 105.
-(pdftex.def)             Requested size: 243.90959pt x 122.49019pt.
+e 107.
+(pdftex.def)             Requested size: 248.46306pt x 124.77817pt.
  [2 <../images/quadratic_steps_vs_mag.png> <../images/lsq_error_gradient.png> <
 ../images/guess_vs_mags_2.png> <../images/stochastic_gradient_steps.png> <../im
 ages/batch_gradient_steps_2.png>]
-[3] <../images/poly0.png, id=34, 578.16pt x 433.62pt>
+<../images/poly0.png, id=30, 578.16pt x 433.62pt>
 File: ../images/poly0.png Graphic file (type png)
+ <use ../images/poly0.png>
+Package pdftex.def Info: ../images/poly0.png used on input line 210.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
-<use ../images/poly0.png>
-Package pdftex.def Info: ../images/poly0.png used on input line 208.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
- <../images/poly1.png, id=35, 578.16pt x 433.62pt>
+<../images/poly1.png, id=31, 578.16pt x 433.62pt>
 File: ../images/poly1.png Graphic file (type png)
+ <use ../images/poly1.png>
+Package pdftex.def Info: ../images/poly1.png used on input line 211.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
-<use ../images/poly1.png>
-Package pdftex.def Info: ../images/poly1.png used on input line 209.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
- <../images/poly3.png, id=36, 578.16pt x 433.62pt>
+<../images/poly3.png, id=32, 578.16pt x 433.62pt>
 File: ../images/poly3.png Graphic file (type png)
+ <use ../images/poly3.png>
+Package pdftex.def Info: ../images/poly3.png used on input line 212.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
-<use ../images/poly3.png>
-Package pdftex.def Info: ../images/poly3.png used on input line 210.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
- <../images/poly10.png, id=37, 578.16pt x 433.62pt>
+<../images/poly10.png, id=33, 578.16pt x 433.62pt>
 File: ../images/poly10.png Graphic file (type png)
+ <use ../images/poly10.png>
+Package pdftex.def Info: ../images/poly10.png used on input line 213.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
-<use ../images/poly10.png>
-Package pdftex.def Info: ../images/poly10.png used on input line 211.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
- <../images/all_m_3.png, id=38, 578.16pt x 433.62pt>
+[3] <../images/all_m_3.png, id=38, 578.16pt x 433.62pt>
 File: ../images/all_m_3.png Graphic file (type png)
 
 <use ../images/all_m_3.png>
-Package pdftex.def Info: ../images/all_m_3.png used on input line 228.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+Package pdftex.def Info: ../images/all_m_3.png used on input line 230.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
 <../images/all_m_5.png, id=39, 578.16pt x 433.62pt>
 File: ../images/all_m_5.png Graphic file (type png)
 
 <use ../images/all_m_5.png>
-Package pdftex.def Info: ../images/all_m_5.png used on input line 229.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+Package pdftex.def Info: ../images/all_m_5.png used on input line 231.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
 <../images/all_m_7.png, id=40, 578.16pt x 433.62pt>
 File: ../images/all_m_7.png Graphic file (type png)
 
 <use ../images/all_m_7.png>
-Package pdftex.def Info: ../images/all_m_7.png used on input line 230.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+Package pdftex.def Info: ../images/all_m_7.png used on input line 232.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
 <../images/all_m_10.png, id=41, 578.16pt x 433.62pt>
 File: ../images/all_m_10.png Graphic file (type png)
 
 <use ../images/all_m_10.png>
-Package pdftex.def Info: ../images/all_m_10.png used on input line 231.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+Package pdftex.def Info: ../images/all_m_10.png used on input line 233.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
  <../images/cos2.png, id=42, 578.16pt x 433.62pt>
 File: ../images/cos2.png Graphic file (type png)
 
 <use ../images/cos2.png>
-Package pdftex.def Info: ../images/cos2.png used on input line 242.
-(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
+Package pdftex.def Info: ../images/cos2.png used on input line 244.
+(pdftex.def)             Requested size: 165.64484pt x 124.2314pt.
  <../images/cos5.png, id=43, 578.16pt x 433.62pt>
 File: ../images/cos5.png Graphic file (type png)
 
 <use ../images/cos5.png>
-Package pdftex.def Info: ../images/cos5.png used on input line 243.
-(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
+Package pdftex.def Info: ../images/cos5.png used on input line 245.
+(pdftex.def)             Requested size: 165.64484pt x 124.2314pt.
  <../images/cos8.png, id=44, 578.16pt x 433.62pt>
 File: ../images/cos8.png Graphic file (type png)
 
 <use ../images/cos8.png>
-Package pdftex.def Info: ../images/cos8.png used on input line 244.
-(pdftex.def)             Requested size: 162.60915pt x 121.95532pt.
+Package pdftex.def Info: ../images/cos8.png used on input line 246.
+(pdftex.def)             Requested size: 165.64484pt x 124.2314pt.
  [4 <../images/poly0.png> <../images/poly1.png> <../images/poly3.png> <../image
 s/poly10.png> <../images/all_m_3.png> <../images/all_m_5.png> <../images/all_m_
-7.png> <../images/all_m_10.png>]
-<../images/ridge3low.png, id=56, 578.16pt x 433.62pt>
+7.png> <../images/all_m_10.png> <../images/cos2.png> <../images/cos5.png> <../i
+mages/cos8.png>]
+<../images/ridge3low.png, id=59, 578.16pt x 433.62pt>
 File: ../images/ridge3low.png Graphic file (type png)
 
 <use ../images/ridge3low.png>
-Package pdftex.def Info: ../images/ridge3low.png used on input line 275.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+Package pdftex.def Info: ../images/ridge3low.png used on input line 277.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
-<../images/ridge3high.png, id=57, 578.16pt x 433.62pt>
+<../images/ridge3high.png, id=60, 578.16pt x 433.62pt>
 File: ../images/ridge3high.png Graphic file (type png)
 
 <use ../images/ridge3high.png>
-Package pdftex.def Info: ../images/ridge3high.png used on input line 276.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+Package pdftex.def Info: ../images/ridge3high.png used on input line 278.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
-<../images/ridge10low.png, id=58, 578.16pt x 433.62pt>
+<../images/ridge10low.png, id=61, 578.16pt x 433.62pt>
 File: ../images/ridge10low.png Graphic file (type png)
 
 <use ../images/ridge10low.png>
-Package pdftex.def Info: ../images/ridge10low.png used on input line 277.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
+Package pdftex.def Info: ../images/ridge10low.png used on input line 279.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
 
-<../images/ridge10high.png, id=59, 578.16pt x 433.62pt>
+<../images/ridge10high.png, id=62, 578.16pt x 433.62pt>
 File: ../images/ridge10high.png Graphic file (type png)
 
 <use ../images/ridge10high.png>
-Package pdftex.def Info: ../images/ridge10high.png used on input line 278.
-(pdftex.def)             Requested size: 130.08897pt x 97.5669pt.
- [5 <../images/cos2.png> <../images/cos5.png> <../images/cos8.png> <../images/r
-idge3low.png> <../images/ridge3high.png> <../images/ridge10low.png> <../images/
-ridge10high.png>] [6] (./paper.aux) ) 
+Package pdftex.def Info: ../images/ridge10high.png used on input line 280.
+(pdftex.def)             Requested size: 132.51756pt x 99.38644pt.
+ [5 <../images/ridge3low.png> <../images/ridge3high.png> <../images/ridge10low.
+png> <../images/ridge10high.png>]
+<../images/everything.png, id=70, 1152.7065pt x 650.43pt>
+File: ../images/everything.png Graphic file (type png)
+
+<use ../images/everything.png>
+Package pdftex.def Info: ../images/everything.png used on input line 343.
+(pdftex.def)             Requested size: 276.07193pt x 155.77887pt.
+ [6 <../images/everything.png>] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 3086 strings out of 493089
- 43243 string characters out of 6134842
- 119919 words of memory out of 5000000
- 6511 multiletter control sequences out of 15000+600000
+ 3155 strings out of 493117
+ 44199 string characters out of 6135433
+ 120062 words of memory out of 5000000
+ 6553 multiletter control sequences out of 15000+600000
  12023 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,32p,821b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti10.pfb>
-Output written on paper.pdf (6 pages, 947856 bytes).
+ 38i,14n,32p,821b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on paper.pdf (6 pages, 1030058 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
